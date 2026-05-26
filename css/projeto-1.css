@@ -330,14 +330,8 @@ width: 100%; height: auto; max-height: 350px; object-fit: contain; cursor: point
   object-fit: contain;
   border-radius: var(--radius-md);
   cursor: pointer;
-  box-shadow: var(--shadow-md);
-  transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.mat-image:hover {
-  transform: scale(1.008);
-  box-shadow: var(--shadow-lg);
-}
 
 .mat-hint {
   font-size: .75rem;

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"require\\('C:/Users/User/Documents/Código/Portifolio/Portifolio/js/script.js'\\)\")"
+    ]
+  }
+}

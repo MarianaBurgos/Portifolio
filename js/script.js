@@ -1,4 +1,4 @@
-/* ── Translations ──────────────────────────────────────── */
+/* ── Tradução ──────────────────────────────────────── */
 const translations = {
   en: {
     'nav.about': 'About',
@@ -13,6 +13,31 @@ const translations = {
     'hero.stat1': 'Years of Experience',
     'hero.stat2': 'Industries',
     'hero.card.role': 'Product &amp; UI/UX Designer',
+    /* ── Curiosidades modal ── */
+    'curios.tooltip':         'About me :p',
+    'curios.greeting':        'Hey! I\'m Mariana 👋',
+    'curios.subtitle':        'A few things about me',
+    'curios.art.title':       'Illustrator',
+    'curios.art.desc':        'Besides my personal drawings, I\'ve illustrated a published children\'s book!',
+    'curios.art.btn':         'See the book →',
+    'curios.scout.title':     'Girl Scout',
+    'curios.scout.desc':      'I was a scout, though no longer active. An experience that shaped how I think and act.',
+    'curios.scout.btn':       'See album →',
+    'curios.spotify.title':   'On Spotify',
+    'curios.spotify.desc':    'Curious about what I listen to?',
+    'curios.spotify.btn':     'View profile →',
+    'curios.passions.title':  'Find me on Instagram!',
+    'curios.passions.desc':   'If you\'re into animation, anime, mythology, good music and are curious about life…',
+    'curios.passions.btn':    '@xbluemarix →',
+    'curios.movie.badge':     'Favorite movie',
+    'curios.anim.badge':      'Favorite animation',
+    'curios.treasure.title':  'Treasure Planet',
+    'curios.treasure.year':   'Disney · 2002',
+    'curios.treasure.fact':   'One of Disney\'s most underrated films. Beyond the music, the heart of it is about growing up — and whoever watches it doesn\'t just witness that journey. They live it too.',
+    'curios.adventure.title': 'Adventure Time',
+    'curios.adventure.year':  'Cartoon Network · 2010',
+    'curios.adventure.fact':  'It starts as a kids\' cartoon and ends as something else entirely. Each season peels back a new layer — of the world, of the characters, of what it means to grow up and let go.',
+    'curios.flip.back':       '↩ flip back',
     'about.label': 'About Me',
     'about.title': 'Design with purpose.<br>Build what works.',
     'about.p1': 'Designer by training, developer by choice, and naturally critical. I care about aesthetics, but what truly matters is the purpose behind every solution.',
@@ -29,6 +54,7 @@ const translations = {
     'exp.title': 'Experience &amp; Education',
     'exp.work.col': 'Work History',
     'exp.edu.col': 'Education',
+    'edu.degree': 'Graphic Design Technology',
     'exp1.period': 'Jan 2017 – Present',
     'exp1.role': 'Freelance Designer',
     'exp1.company': 'Self-employed',
@@ -58,7 +84,11 @@ const translations = {
     'proj.subtitle': 'Currently documenting case studies — available upon request.',
     'proj.cta': 'Work Together',
     'proj.coming': 'Coming Soon',
+    'proj.wip':    'Case study in progress. Check back soon.',
+    'proj.view':   'View Project →',
     'proj1.title': 'Hora de Quitar',
+    'proj2.title': 'Venda+ &amp; Lojistas Mury',
+    'proj2.desc':  'Wireframes, information architecture, and marketing materials for two apps in the Mury Cartões ecosystem.',
     'proj1.desc': 'Campaign branding for debt renegotiation.',
     'tag.campaign': 'Campaign',
     'tag.renegotiation': 'Renegotiation',
@@ -100,6 +130,40 @@ const translations = {
     'p1.banners.title': 'Website Banners',
     'p1.banners.desc':  'Responsive banner formats optimized for desktop and mobile — keeping visual impact and message clarity intact at every size.',
     'p1.mat.hint':      '↕ Click to view full size',
+    /* ── projeto-2: Venda+ & Lojistas Mury ── */
+    'p2.hero.title':             'Sales &amp; Management System',
+    'p2.tagline':                'Wireframes, information architecture, and marketing materials for two apps in the Mury Cartões ecosystem — Venda+ for accredited sellers and retailers, and Mury Cartões for cardholders.',
+    'p2.meta':                   'Product Design · UX/UI · Wireframing',
+    'p2.context.label':          'Context',
+    'p2.context.title':          'Two apps, one ecosystem',
+    'p2.venda.desc':             'App for accredited sellers and partner retailers to manage sales, process payments, and track performance.',
+    'p2.venda.f1':               'Comprehensive sales management',
+    'p2.venda.f2':               'Multiple payment options',
+    'p2.venda.f3':               'Customizable dashboard',
+    'p2.mury.desc':              'App for Mury Cartões cardholders to manage limits, benefits, invoices, and access the accredited network.',
+    'p2.mury.f1':                'Limit and benefits control in one place',
+    'p2.mury.f2':                'Quick and easy invoice management',
+    'p2.mury.f3':                'Full accredited network access',
+    'p2.company':                'Company: Mury Cartões',
+    'p2.marketing.label':        'Marketing Materials',
+    'p2.social.label':           'Social Media',
+    'p2.role.title':             'My Role',
+    'p2.role.desc':              'Created wireframes for main screens, designed complete navigation flowcharts and information architecture, plus all marketing materials and internal communication assets for both applications.',
+    'p2.wireframes.title':       'Wireframes &amp; Screen Structure',
+    'p2.tabs.venda':             'Venda+',
+    'p2.tabs.lojistas':          'Lojistas Mury',
+    'p2.venda.wire.desc':        'Low and mid-fidelity wireframes focused on sales flow and inventory management for external salespeople.',
+    'p2.lojistas.wire.desc':     'Wireframes focused on data visualization, transaction history, and support for partner retailers.',
+    'p2.venda.wire1':            'Login',
+    'p2.venda.wire2':            'Dashboard',
+    'p2.lojistas.wire1':         'Login',
+    'p2.process.title':          'Information Architecture &amp; Flowcharts',
+    'p2.process.desc':           'Beyond wireframes, I created complete navigation flowcharts and user flow mapping for both applications, defining information structure and key user journeys.',
+    'p2.process.note':           'Note: Original flowcharts are unavailable (company property).',
+    'p2.marketing.title':        'Marketing Materials',
+    'p2.venda.marketing.desc':   'Promotional materials, banners, and communication assets for Venda+ app.',
+    'p2.lojistas.marketing.desc':'Promotional materials and communication assets for Lojistas Mury app.',
+    'p2.mat.hint':               '↕ Click to view full size',
     'p1.credits.title': 'Credits &amp; Acknowledgements',
     'p1.credits.text':  'All materials presented were developed in partnership with <a href="https://www.linkedin.com/in/limadesign/" target="_blank" class="link">João Lima</a>, who also led the creation of other campaign assets, including the <a href="https://murycartoes.com.br/renegociacao/?source=bannerSite" target="_blank" style="font-weight:800;text-decoration:none;color:var(--gray-600);">landing page</a>, "Hora de Quitar" logo, and social media. I would also like to take this opportunity to thank João for everything I learned from him during our time working together. A professional who sees beyond a simple process, clearly perceiving the identity of what he creates and develops. He will always be an inspiration to me, and I am deeply grateful to fate for giving me the chance to meet someone who opened my eyes to the world and never saw my curiosity as a flaw.',
     'skills.label': 'Expertise',
@@ -116,6 +180,7 @@ const translations = {
     'form.msg': 'Message',
     'hero.cv': 'Download CV',
     /* ── Skills — Tools & Areas ── */
+    'footer.text':       '© 2026 Mariana Burgos · MG, Brasil · <a href="mailto:burgosmariana.mb@gmail.com">burgosmariana.mb@gmail.com</a>',
     'tools.title':       'Tools &amp; Areas',
     'tool.ux':           'UX Research',
     'tool.ds':           'Design Systems',
@@ -139,6 +204,31 @@ const translations = {
     'hero.stat1': 'Anos de Experiência',
     'hero.stat2': 'Setores',
     'hero.card.role': 'Product &amp; UI/UX Designer',
+    /* ── Curiosidades modal ── */
+    'curios.tooltip':         'Sobre mim :p',
+    'curios.greeting':        'Olá! Eu sou a Mariana 👋',
+    'curios.subtitle':        'Algumas curiosidades sobre mim',
+    'curios.art.title':       'Ilustradora',
+    'curios.art.desc':        'Além dos meus desenhos pessoais, já ilustrei um livro infantil publicado!',
+    'curios.art.btn':         'Ver o livro →',
+    'curios.scout.title':     'Escoteira',
+    'curios.scout.desc':      'Fui escoteira, mas não sou mais ativa. Uma experiência que moldou meu jeito de pensar e agir.',
+    'curios.scout.btn':       'Ver álbum →',
+    'curios.spotify.title':   'No Spotify',
+    'curios.spotify.desc':    'Curioso(a) sobre o que eu ouço?',
+    'curios.spotify.btn':     'Ver perfil →',
+    'curios.passions.title':  'Me chama no Insta!',
+    'curios.passions.desc':   'Se você curte animação, anime, mitologia, boa música e é curioso(a) sobre a vida…',
+    'curios.passions.btn':    '@xbluemarix →',
+    'curios.movie.badge':     'Filme favorito',
+    'curios.anim.badge':      'Animação favorita',
+    'curios.treasure.title':  'Planeta do Tesouro',
+    'curios.treasure.year':   'Disney · 2002',
+    'curios.treasure.fact':   'Um dos filmes mais subestimados da Disney. Além da música, o principal é um processo de amadurecimento — e quem assiste não só acompanha essa jornada. Vive junto.',
+    'curios.adventure.title': 'Hora de Aventura',
+    'curios.adventure.year':  'Cartoon Network · 2010',
+    'curios.adventure.fact':  'Começa como desenho infantil e termina como outra coisa completamente. Cada temporada descasca uma nova camada — do mundo, dos personagens, do que significa crescer e deixar ir.',
+    'curios.flip.back':       '↩ virar',
     'about.label': 'Sobre Mim',
     'about.title': 'Design com propósito.<br>Construir o que funciona.',
     'about.p1': 'Designer por formação, desenvolvedora por escolha e naturalmente crítica. Me importo com estética, mas o que realmente importa é o propósito por trás de cada solução.',
@@ -155,6 +245,7 @@ const translations = {
     'exp.title': 'Experiência &amp; Educação',
     'exp.work.col': 'Histórico Profissional',
     'exp.edu.col': 'Educação',
+    'edu.degree': 'Tecnologia de Design Gráfico',
     'exp1.period': 'Jan 2017 – Presente',
     'exp1.role': 'Designer Freelance',
     'exp1.company': 'Autônoma',
@@ -184,8 +275,11 @@ const translations = {
     'proj.subtitle': 'Estudos de caso em documentação — disponíveis mediante solicitação.',
     'proj.cta': 'Trabalhar Juntos',
     'proj.coming': 'Em Breve',
-    'proj.wip': 'Estudo de caso em andamento. Volte em breve.',
+    'proj.wip':    'Estudo de caso em andamento. Volte em breve.',
+    'proj.view':   'Ver Projeto →',
     'proj1.title': 'Hora de Quitar',
+    'proj2.title': 'Venda+ &amp; Lojistas Mury',
+    'proj2.desc':  'Wireframes, arquitetura de informação e materiais de divulgação para dois apps do ecossistema Mury Cartões.',
     'proj1.desc': 'Identidade de campanha para renegociação de dívidas.',
     'tag.campaign': 'Campanha',
     'tag.renegotiation': 'Renegociação',
@@ -227,6 +321,40 @@ const translations = {
     'p1.banners.title': 'Banners para Site',
     'p1.banners.desc':  'Formatos de banner adaptados para desktop e mobile, mantendo impacto visual e legibilidade em todos os tamanhos de tela.',
     'p1.mat.hint':      '↕ Clique para ampliar',
+    /* ── projeto-2: Venda+ & Lojistas Mury ── */
+    'p2.hero.title':             'Sistema de Vendas &amp; Gestão',
+    'p2.tagline':                'Wireframes, arquitetura de informação e materiais de divulgação para dois aplicativos do ecossistema Mury Cartões — Venda+ voltado aos credenciados e vendedores, e Mury Cartões focado nos clientes que utilizam os cartões benefício da Mury.',
+    'p2.meta':                   'Product Design · UX/UI · Wireframing',
+    'p2.context.label':          'Contexto',
+    'p2.context.title':          'Dois apps, um ecossistema',
+    'p2.venda.desc':             'App para lojistas e credenciados gerenciarem vendas, processar pagamentos e acompanhar resultados.',
+    'p2.venda.f1':               'Amplo gerenciamento de vendas',
+    'p2.venda.f2':               'Variedade de possibilidades de pagamento',
+    'p2.venda.f3':               'Dashboard personalizada',
+    'p2.mury.desc':              'App para usuários dos cartões benefício da Mury gerenciarem limites, benefícios, faturas e acessarem a rede credenciada.',
+    'p2.mury.f1':                'Controle de limite e benefícios em um único lugar',
+    'p2.mury.f2':                'Faturas com rapidez e praticidade',
+    'p2.mury.f3':                'Acesso a toda a rede credenciada',
+    'p2.company':                'Empresa: Mury Cartões',
+    'p2.marketing.label':        'Materiais de Marketing',
+    'p2.social.label':           'Redes Sociais',
+    'p2.role.title':             'Meu Papel',
+    'p2.role.desc':              'Criei wireframes das telas principais, desenhei os fluxogramas completos de navegação e arquitetura da informação, além de todos os materiais de divulgação e comunicação interna dos dois aplicativos.',
+    'p2.wireframes.title':       'Wireframes &amp; Estrutura de Telas',
+    'p2.tabs.venda':             'Venda+',
+    'p2.tabs.lojistas':          'Lojistas Mury',
+    'p2.venda.wire.desc':        'Wireframes de baixa e média fidelidade focados no fluxo de venda e gestão de estoque para vendedores externos.',
+    'p2.lojistas.wire.desc':     'Wireframes focados em visualização de dados, histórico de transações e suporte para lojistas parceiros.',
+    'p2.venda.wire1':            'Login',
+    'p2.venda.wire2':            'Dashboard',
+    'p2.lojistas.wire1':         'Login',
+    'p2.process.title':          'Arquitetura de Informação &amp; Fluxogramas',
+    'p2.process.desc':           'Além dos wireframes, criei os fluxogramas completos de navegação e mapeamento de user flows para ambos os aplicativos, definindo a estrutura de informação e principais jornadas do usuário.',
+    'p2.process.note':           'Nota: Os fluxogramas originais não estão disponíveis (propriedade da empresa).',
+    'p2.marketing.title':        'Materiais de Divulgação',
+    'p2.venda.marketing.desc':   'Materiais promocionais, banners e assets de comunicação para o app Venda+.',
+    'p2.lojistas.marketing.desc':'Materiais promocionais e assets de comunicação para o app Lojistas Mury.',
+    'p2.mat.hint':               '↕ Clique para ampliar',
     'p1.credits.title': 'Créditos e agradecimentos',
     'p1.credits.text':  'Todo o material apresentado foi desenvolvido em parceria com <a href="https://www.linkedin.com/in/limadesign/" target="_blank" class="link">João Lima</a>, que também liderou a criação de outros assets da campanha, incluindo a <a href="https://murycartoes.com.br/renegociacao/?source=bannerSite" target="_blank" style="font-weight:800;text-decoration:none;color:var(--gray-600);">landing page</a>, logo "Hora de Quitar" e social media. Gostaria de aproveitar e agradecer ao João por todo aprendizado que tive com ele durante nosso tempo trabalhando juntos. Um profissional que vê além de um simples processo, enxerga claramente a identidade daquilo que cria e desenvolve. Sempre será uma inspiração para mim e sou muito grata ao destino/vida por ter me dado a oportunidade de conhecer alguém que fez abrir os meus olhos para o mundo e não viu a minha curiosidade como um defeito.',
     'skills.label': 'Especialidades',
@@ -243,6 +371,7 @@ const translations = {
     'form.submit': 'Enviar Mensagem →',
     'hero.cv': 'Baixar CV',
     /* ── Skills — Ferramentas & Áreas ── */
+    'footer.text':       '© 2026 Mariana Burgos · MG, Brasil · <a href="mailto:burgosmariana.mb@gmail.com">burgosmariana.mb@gmail.com</a>',
     'tools.title':       'Ferramentas &amp; Áreas',
     'tool.ux':           'Pesquisa UX',
     'tool.ds':           'Design Systems',
@@ -285,12 +414,11 @@ document.querySelectorAll('.lang-btn').forEach(btn => {
 
 const navbar = document.getElementById('navbar');
 if (navbar) {
+  // Apply immediately on load (handles page refresh while already scrolled)
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
   });
 }
 
@@ -356,7 +484,7 @@ document.querySelector('.lightbox-close')?.addEventListener('click', closeLightb
 document.querySelector('.lightbox-backdrop')?.addEventListener('click', closeLightbox);
 
 document.addEventListener('keydown', (e) => {
-  if (lightbox.classList.contains('active')) {
+  if (lightbox && lightbox.classList.contains('active')) {
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowRight') navigateLightbox(1);
     if (e.key === 'ArrowLeft') navigateLightbox(-1);
