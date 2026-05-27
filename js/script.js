@@ -603,4 +603,84 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-/* ── Translations ──────────────────────────────────────── */
+/* ── Contact Form Handler (PHP) ─────────────────────────── */
+(function () {
+  'use strict';
+
+  const contactForm = document.getElementById('contactForm');
+  const formStatus  = document.getElementById('formStatus');
+  const submitBtn   = document.getElementById('submitBtn');
+
+  if (!contactForm) return;
+
+  contactForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (submitBtn) {
+      submitBtn.disabled    = true;
+      submitBtn.textContent = currentLang === 'pt' ? 'Enviando...' : 'Sending...';
+    }
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch('form-handler.php', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (formStatus) {
+        formStatus.style.display = 'block';
+
+        if (result.success) {
+          formStatus.style.backgroundColor = 'rgba(76,175,80,.1)';
+          formStatus.style.borderLeft      = '4px solid #4caf50';
+          formStatus.style.color           = '#2e7d32';
+          formStatus.textContent           = '✓ ' + (currentLang === 'pt'
+            ? 'Mensagem enviada! Obrigada pelo contato. Responderei em breve.'
+            : result.message);
+
+          contactForm.reset();
+
+          setTimeout(function () {
+            formStatus.style.display = 'none';
+            if (submitBtn) {
+              submitBtn.disabled    = false;
+              submitBtn.textContent = translations[currentLang]['form.submit'] || 'Send Message →';
+            }
+          }, 5000);
+
+        } else {
+          formStatus.style.backgroundColor = 'rgba(244,67,54,.1)';
+          formStatus.style.borderLeft      = '4px solid #f44336';
+          formStatus.style.color           = '#c62828';
+          formStatus.textContent           = '✗ ' + result.message;
+
+          if (submitBtn) {
+            submitBtn.disabled    = false;
+            submitBtn.textContent = translations[currentLang]['form.submit'] || 'Send Message →';
+          }
+        }
+      }
+
+    } catch (error) {
+      console.error('Form error:', error);
+      if (formStatus) {
+        formStatus.style.display          = 'block';
+        formStatus.style.backgroundColor  = 'rgba(244,67,54,.1)';
+        formStatus.style.borderLeft       = '4px solid #f44336';
+        formStatus.style.color            = '#c62828';
+        formStatus.textContent            = currentLang === 'pt'
+          ? '✗ Erro ao enviar. Por favor, tente novamente.'
+          : '✗ Error sending message. Please try again.';
+      }
+      if (submitBtn) {
+        submitBtn.disabled    = false;
+        submitBtn.textContent = translations[currentLang]['form.submit'] || 'Send Message →';
+      }
+    }
+  });
+
+})();
