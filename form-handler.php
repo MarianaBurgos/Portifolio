@@ -34,9 +34,10 @@ $body .= "\n--- MESSAGE ---\n";
 $body .= $message . "\n";
 $body .= "\n=== END SUBMISSION ===\n";
 
-$headers  = "From: " . $email . "\r\n";
+$headers  = "From: noreply@marianaburgos.com.br\r\n";
 $headers .= "Reply-To: " . $email . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$headers .= "X-Mailer: PHP/" . phpversion() . "\r\n";
 
 $emailSent = mail($recipient, $subject, $body, $headers);
 
